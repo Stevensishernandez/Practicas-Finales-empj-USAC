@@ -1,0 +1,158 @@
+<div class="container-fluid">
+  <!-- <div class="row"> -->
+  <img src="assets/imgs/bg.png" alt="login image" class="login-img">
+
+  <div class="row">
+    <img src="assets/img/marketin.png" alt="" class="logo_dash">
+  </div>
+<br>
+<br>
+<br>
+
+<br>
+<br>
+<br>
+  <div class="">
+
+    <div class="row">
+      <div class="col-2 boxi" (mouseover)="imgUser=true" (mouseout)="imgUser=false">
+        <div class="card boxes" style="width: 12rem;">
+          <img class="card-img-top" src="https://firebasestorage.googleapis.com/v0/b/practicasfinalesiot.appspot.com/o/temperatura.png?alt=media&token=1d4551f7-1ac5-4032-805a-f90aa7dc3f1c" alt="Card image cap">
+          <div class="card-body">
+            <h3>{{ultimo.temperatura}}</h3>
+            <h5 class="card-title">Temperatura</h5>
+            <p class="card-text">-40˚C a 85˚C</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-2 boxi" (mouseover)="imgUser=true" (mouseout)="imgUser=false">
+        <div class="card boxes" style="width: 12rem;">
+          <img class="card-img-top" src="https://firebasestorage.googleapis.com/v0/b/practicasfinalesiot.appspot.com/o/tejido-que-absorbe-la-humedad.png?alt=media&token=1fc3e719-42f1-49d8-969b-228f95e5d4d8" alt="Card image cap">
+          <div class="card-body">
+            <h3>{{ultimo.humidicy}}</h3>
+            <h5 class="card-title">Humedad Relativa</h5>
+            <p class="card-text">0% - 100%</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-2 boxi" (mouseover)="imgUser=true" (mouseout)="imgUser=false">
+        <div class="card boxes" style="width: 12rem;">
+          <img class="card-img-top" src="https://firebasestorage.googleapis.com/v0/b/practicasfinalesiot.appspot.com/o/velocidad.png?alt=media&token=a41ee18f-1085-49da-adc0-1a09c34264b0" alt="Card image cap">
+          <div class="card-body">
+            <h3>{{ultimo.pressure}}</h3>
+            <h5 class="card-title">Presión barométrica</h5>
+            <p class="card-text">300 - 1100hPa</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-2 boxi" (mouseover)="imgUser=true" (mouseout)="imgUser=false">
+        <div class="card boxes" style="width: 12rem;">
+          <img class="card-img-top" src="https://firebasestorage.googleapis.com/v0/b/practicasfinalesiot.appspot.com/o/calidad-del-aire%20(1).png?alt=media&token=ac026fb1-3a76-4076-971a-c2880c06f965" alt="Card image cap">
+          <div class="card-body">
+            <h3>{{ultimo.gas}}</h3>
+            <h5 class="card-title">Calidad del aire</h5>
+            <p class="card-text">0 -500/(Según tabla EPA)</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-2 boxi" (mouseover)="imgUser=true" (mouseout)="imgUser=false">
+        <div class="card boxes" style="width: 12rem;">
+          <img class="card-img-top" src="https://firebasestorage.googleapis.com/v0/b/practicasfinalesiot.appspot.com/o/altitud.png?alt=media&token=1f1e1729-b07a-4319-8a81-41642b026dc4" alt="Card image cap">
+          <div class="card-body">
+            <h3>{{ultimo.altitude}}</h3>
+            <h5 class="card-title">Altitud aproximada </h5>
+            <p class="card-text">(m)</p>
+          </div>
+        </div>
+      </div>
+
+      
+    </div>
+
+    <!-- <div class="row">
+      <div (click)="goCategories()" class="col-2 boxi" (mouseover)="imgCat=true" (mouseout)="imgCat=false">
+        <img *ngIf="!imgCat" src="assets/imgs/home_cat.svg" alt="" class="boxes">
+        <img *ngIf="imgCat" src="assets/imgs/home_catRed.svg" alt="" class="boxes">
+      </div>
+      <div (click)="goMultimedia()" class="col-2 boxi" (mouseover)="imgBrand=true" (mouseout)="imgBrand=false">
+        <img *ngIf="!imgBrand" src="assets/imgs/home_brand.svg" alt="" class="boxes">
+        <img *ngIf="imgBrand" src="assets/imgs/home_brandRed.svg" alt="" class="boxes">
+      </div>
+      <div (click)="goProducts()" class="col-2 boxi" (mouseover)="imgProd=true" (mouseout)="imgProd=false">
+        <img *ngIf="!imgProd" src="assets/imgs/home_prod.svg" alt="" class="boxes">
+        <img *ngIf="imgProd" src="assets/imgs/home_prodRed.svg" alt="" class="boxes">
+      </div>
+      <div class="col-2 boxi" (mouseover)="imgImport=true" (mouseout)="imgImport=false">
+        <img *ngIf="!imgImport" src="assets/imgs/home_import.svg" alt="" class="boxes">
+        <img *ngIf="imgImport" src="assets/imgs/home_importRed.svg" alt="" class="boxes">
+      </div>
+    </div> -->
+
+
+    <!-- <div class="row"> -->
+      <!-- <div (click)="goSelection()" class="col-2 boxi" (mouseover)="imgSel=true" (mouseout)="imgSel=false">
+        <img *ngIf="!imgSel" src="assets/imgs/home_sel.svg" alt="" class="boxes2">
+        <img *ngIf="imgSel" src="assets/imgs/home_selRed.svg" alt="" class="boxes2">
+      </div>
+      <div (click)="goValue()" class="col-2 boxi" (mouseover)="imgValor=true" (mouseout)="imgValor=false">
+        <img *ngIf="!imgValor" src="assets/imgs/home_valor.svg" alt="" class="boxes2">
+        <img *ngIf="imgValor" src="assets/imgs/home_valorRed.svg" alt="" class="boxes2">
+      </div> -->
+      <!-- <div (click)="goUsers()" class="col-2 boxi" (mouseover)="imgUser=true" (mouseout)="imgUser=false">
+        <img *ngIf="!imgUser" src="assets/imgs/home_user.svg" alt="" class="boxes2">
+        <img *ngIf="imgUser" src="assets/imgs/home_userRed.svg" alt="" class="boxes2">
+      </div> -->
+      <!-- <div (click)="goBackup()" class="col-2 boxi" (mouseover)="imgBack=true" (mouseout)="imgBack=false">
+        <img *ngIf="!imgBack" src="assets/imgs/home_back.svg" alt="" class="boxes2">
+        <img *ngIf="imgBack" src="assets/imgs/home_backRed.svg" alt="" class="boxes2">
+      </div> -->
+    <!-- </div> -->
+
+  </div>
+
+  <!-- <div class="col-sm-1"></div>
+    <div class="box col-sm-2" (click)="goCategories()">
+      <img src="assets/home/categorias.svg" alt="" class="icon">
+      <label class="label2 col-auto">Categorías</label>
+    </div>
+    <div class="box col-sm-2" (click)="goProducts()">
+      <img src="assets/home/productos.svg" alt="" class="icon">
+      <label class="label2 col-auto">Productos</label>
+    </div>
+    <div class="box col-sm-2">
+      <img src="assets/home/importar.svg" alt="" class="icon">
+      <label class="label col-auto">Importar Productos</label>
+    </div>
+    <div class="box col-sm-2">
+      <img src="assets/home/seleccion.svg" alt="" class="icon">
+      <label class="label2 col-auto">Selección</label>
+    </div>
+
+    <br>
+    <div class="col-sm-1 row"></div>
+    <div class="col-sm-1 row"></div>
+    <div class="box2 col-sm-2" (click)="goMultimedia()">
+      <img src="assets/home/multimedia.svg" alt="" class="icon">
+      <label class="label2 col-auto">Marcas</label>
+    </div>
+    <div class="box2 col-sm-2">
+      <img src="assets/home/valor.svg" alt="" class="icon">
+      <label class="label col-auto">Valor Agregado</label>
+    </div>
+    <div class="box2 col-sm-2" (click)="goUsers()">
+      <img src="assets/home/usuarios.svg" alt="" class="icon">
+      <label class="label2 col-auto">Usuarios</label>
+    </div>
+    <div class="box2 col-sm-2">
+      <img src="assets/home/backup.svg" alt="" class="icon">
+      <label class="label2 col-auto">Backup</label>
+    </div> -->
+
+  <!-- </div> -->
+  <!-- <label class="copy">© Copyright Hivimar Industrial. Todos los Derechos Reservados. Desarrollado por FLY Casa Creativa.</label> -->
+</div>
